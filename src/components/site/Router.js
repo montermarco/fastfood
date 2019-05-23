@@ -8,7 +8,8 @@ import Item from '../menu/Item';
 class Router extends Component {
 
     state = {
-        menuItems: []
+        menuItems: [],
+        searchStr: ''
     }
 
     componentWillMount(){
@@ -17,18 +18,41 @@ class Router extends Component {
         })
     }
 
+    searcher = (search) => {
+        if(search.length > 2){
+            this.setState({
+                searchStr: search
+            }) 
+        } else {
+            this.setState({
+                searchStr: ''
+            })
+        }
+    }
+
     render() {
-        return (
-            
+        //Filtering menu items
+        let items = [...this.state.menuItems];
+        let search = this.state.searchStr;
+        let result; 
+        
+        if(search !== ''){
+            result = items.filter(item =>(
+                item.description.toLowerCase().indexOf(search.toLowerCase()) !== -1                
+            ))            
+        } else {
+            result = items;
+        }
+        
+        return (   
                 <BrowserRouter>
 
                     <Header/>
 
-
-
                     <Switch>
                         <Route exact path="/" render={() => (
-                            <Menu menuItems={this.state.menuItems}/>
+                            <Menu menuItems={result}
+                                searcher={this.searcher}/>
                         )}/>
 
 

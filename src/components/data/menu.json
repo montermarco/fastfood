@@ -4,7 +4,7 @@
         "dish": "Hamburgusa",
         "price":"125",
         "image":"burger_01",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Hamburguesa de carne de res acompañada de aros de cebolla y ensalada cesar.",
         "rate":"5"
         },
         {
@@ -12,15 +12,15 @@
         "dish": "Hamburgusa vegana",
         "price":"105",
         "image":"vegan_02",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Hamburguesa de esparragos y berengena y ensaladacon ensalada de jitomate.",
         "rate":"3"
         },
         {
         "id":"2",
-        "dish": "Pizza gourmet",
+        "dish": "Pizza gourmet Extravaganza",
         "price":"145",
         "image":"pizza_03",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Pizza gourmet con masa de trigo, pimiento morron, cebolla morada y salchicha italiana.",
         "rate":"5"
         },
         {
@@ -28,7 +28,7 @@
         "dish": "Panini",
         "price":"100",
         "image":"panini_04",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Panini de jamón de pavo acompañado con adereso parmesano y finas hierbas.",
         "rate":"3"
         },
         {
@@ -36,7 +36,7 @@
         "dish": "Plato Colombiano",
         "price":"185",
         "image":"colombian_05",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Platillo de carne de res asada con papas cambray, mayonesa y deep de cilantro.",
         "rate":"5"
         },
 
@@ -45,7 +45,7 @@
         "dish": "Sushi",
         "price":"125",
         "image":"sushi_06",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Sushi Roll Urakami recubierto de alga nori salmón, con arroz integral y espinacas hervidas.",
         "rate":"4"
         },
         {
@@ -53,15 +53,15 @@
         "dish": "Hot Dog",
         "price":"90",
         "image":"hot-dog_07",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Hot dog en pan de 18cm, con salchicha alemana y queso americano con cebollas caramelizadas.",
         "rate":"4"
         },
         {
         "id":"7",
-        "dish": "Papas a la francesa",
+        "dish": "Papas con albahaca",
         "price":"55",
         "image":"fries_08",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Papas a la francesa naturales con un toque de albahaca, pimienta y especias dulces.",
         "rate":"5"
         },
         {
@@ -69,7 +69,7 @@
         "dish": "Wrap vegano",
         "price":"85",
         "image":"wrap_09",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Wrap de espinacas, morron, aguacate, lechuga y jitomate, va acompañado de papas.",
         "rate":"3"
         },
         {
@@ -77,7 +77,7 @@
         "dish": "Club Sandwich",
         "price":"130",
         "image":"sandwich_10",
-        "description":"Mauris eu mi vitae dui imperdiet finibus id id orci. Morbi iaculis blandit augue rutrum laoreet. Etiam maximus bibendum nisi id tincidunt. Donec laoreet purus eleifend, semper urna quis, auctor felis. Etiam ultricies quis urna sed porttitor. Praesent sit amet dolor orci. Nam lacus purus, varius sit amet enim vitae, lobortis auctor diam. Morbi in tempor arcu. Aliquam efficitur lacus in ante viverra dapibus.",
+        "description":"Sandwich de jamón de pavo, peperoni y queso panela con aderezo parmesano.",
         "rate":"4"
         }
 ]

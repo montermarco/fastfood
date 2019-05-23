@@ -1,16 +1,28 @@
 import React from 'react';
+import { Card } from 'antd';
 
-const Product = (props) => {
+const { Meta } = Card;
+
+const MenuItem = (props) => {
     
     const {image, dish, price, description, rate} = props.info;
+
     return (
-        <li>
+
+        <Card
+    style={{ width: 300 }}
+    cover={
         <img src={`imgs/${image}.jpg`} alt={dish} />
-        <p>{price}</p>
-        <p>{description}</p>
-        <p>{rate}</p>
-        </li>
+    }
+    actions={[ <p>{rate}</p>, <p>{price}</p>]}
+  >
+    <Meta
+      title={dish}
+      description={description}
+    />
+  </Card>
+
     );
 };
 
-export default Product;
+export default MenuItem;
