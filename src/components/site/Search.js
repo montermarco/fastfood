@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Input } from 'antd';
+
+const SearchBar = Input.Search;
 
 class Search extends Component {
 
@@ -10,10 +13,11 @@ class Search extends Component {
     render() {
         return (
             <div>
-                <form action="">
-                    <input type="text" placeholder="Busca un platillo" onChange={this.readSearch}/>
-                    
-                </form>
+                <SearchBar
+                placeholder="Busca un platillo"
+                onChange={this.readSearch}
+                style={{ width: 400 }}
+                />
             </div>
         );
     }

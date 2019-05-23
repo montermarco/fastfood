@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from '../site/Search';
-import { Row, List, Card, Col } from 'antd';
+import Rater from '../site/Rater'
+import { Row, List, Card, Divider, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
 
@@ -10,13 +11,25 @@ class Menu extends Component {
     render() {
         
         return (
-            <div className="menu">
-                <Row type="flex" justify="space-around">
-                    <h2>Explora nuestros platillos...</h2>                    
-                    <Search search={this.props.searcher}/>
-                </Row>
+            <div>
+                <div className="times">
+                    <h1 className="hometxt">Tu comida en 3 tiempos!</h1>
+                    <ul className="txt">
+                        <li>Selecciona un platillo</li>
+                        <li>Escoge tu sucursal</li>
+                        <li>Recoge tu orden</li>
+                    </ul>   
+                </div>
 
-                <div >
+                <Divider>Explora nuestros platillos...</Divider>    
+
+                <Row type="flex" justify="space-around">    
+                    <div className="filters">
+                        <Search search={this.props.searcher}/>
+                        <Rater />
+                    </div>    
+                </Row>
+                
                     <List
                         grid={{
                         xs: 1, sm: 1, md: 3, lg: 3, xl: 4, xxl: 4,
@@ -25,23 +38,27 @@ class Menu extends Component {
                         renderItem={item => (
                             
                             <List.Item>
-                                <Card
-                                    style={{ width: 300 }}
-                                    cover={
-                                        <img src={`imgs/${item.image}.jpg`} alt={item.dish} />
-                                    }
-                                    actions={[ <p>{item.rate}</p>, <p>$ {item.price}</p>, <Link to={`/menuItem/${item.id}`}><h4>Ordenar</h4></Link>]}
-                                >
-                                    <Meta
-                                        title={item.dish}
-                                        description={item.description}
-                                    />
-                                </Card>
+                                <Row type="flex" justify="space-around" >
+                                    <Card
+                                        style={{ width: 300 }}
+                                        cover={
+                                            <img src={`imgs/${item.image}.jpg`} alt={item.dish} />
+                                        }
+                                        actions={[<p>$ {item.price}</p>, <Link to={`/menuItem/${item.id}`}><h4 className="button">Ordenar</h4></Link>]}
+                                    >
+                                        <Meta
+                                            title={item.dish}
+                                            description={item.description}
+                                        />
+                                        
+                                        <span><Icon type="star" theme="twoTone" twoToneColor="#F6DC3F"/> {item.rate}</span>
+                                        
+                                    </Card>
+                                </Row>
                             </List.Item>
+                            
                         )}
                     />
-                </div>
-
             </div>
         );
     }

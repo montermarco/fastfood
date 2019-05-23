@@ -19,7 +19,7 @@ class Router extends Component {
     }
 
     searcher = (search) => {
-        if(search.length > 2){
+        if(search.length > 1){
             this.setState({
                 searchStr: search
             }) 
@@ -31,7 +31,6 @@ class Router extends Component {
     }
 
     render() {
-        //Filtering menu items
         let items = [...this.state.menuItems];
         let search = this.state.searchStr;
         let result; 
