@@ -1,0 +1,64 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name":"San Rafael - Alfonso Herrera ",
+        "loc_id": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 19.440487, -99.164272]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name":"Polanco - Oliver Goldsmith",
+        "loc_id": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.432537,-99.200589]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name":"La Condesa - Amsterdam",
+        "loc_id": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.411546,-99.171326]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name":"Del Valle - Adolfo Prieto",
+        "loc_id": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.391514,-99.167449]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name":"La Florida - Barranca del Muerto",
+        "loc_id": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.364106,-99.178721]
+      }
+    }
+  ]
+}

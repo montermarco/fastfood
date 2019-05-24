@@ -1,10 +1,13 @@
 import React from 'react';
-import { PageHeader, Statistic, Row, Col } from 'antd';
-
+import { PageHeader, Statistic, Row, Col, Modal, Button } from 'antd';
+import Location from '../site/Location';
+import { Link } from 'react-router-dom';
 
 const Item = (props) => {
-    const { dish, description, price, image} = props.items;
 
+    const { dish, description, price} = props.items;
+
+    
     const Description = ({ term, children, span = 12 }) => (
         <Col span={span}>
           <div className="description">
@@ -16,11 +19,8 @@ const Item = (props) => {
       
       const content = (
         <Row>
-          <Description term="Cantidad:"> 1 </Description>
-          <Description term="Sucursal:"></Description>
-          <Description term="Descripción:" span={24}>
-            {description}
-          </Description>
+          <Description term="Cantidad:"> 1 </Description>          
+          <Description term="Descripción:" span={24}>{description}</Description>
         </Row>
       );
       
@@ -35,17 +35,31 @@ const Item = (props) => {
         </Row>
       );
 
+    const success = () => {
+      Modal.success({
+        title: 'Recibimos tu orden!',
+        content: 'Tu orden estará lista en 40 min...',
+      });
+    }  
+
     return (
-        <div>        
-        <PageHeader
-                onBack={() => window.history.back()}
-                title={dish}
-            >
-                <div className="wrap">
-                    <div className="content padding">{content}</div>
-                    <div className="extraContent">{extraContent}</div>
-                </div>
-        </PageHeader>
+        <div>
+          <h2>Selecciona una sucursal</h2>
+           
+          <Location location={props.pickLocation}/>     
+        
+          <PageHeader
+                  onBack={() => window.history.back()}
+                  title={dish}>
+                  <div className="wrap">
+                      <div className="content padding">{content}</div>
+                      <div className="extraContent">{extraContent}</div>
+                  </div>
+          </PageHeader>
+          <Row type="flex" justify="center"> 
+          <Button className="button" onClick={success}>Confirmar orden</Button>
+
+          </Row>  
         </div>
     );
 };

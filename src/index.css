@@ -21,6 +21,9 @@ code {
   margin: 20px 0 0 40px;
   border: 6px white solid;
 }
+.logof{
+  margin: 20px 0 0 40px;
+}
 .times{
   background-image: url('/imgs/tables.jpg');
   background-size: cover;
@@ -63,6 +66,13 @@ code {
   color: #fff;
   transform: translateY(-7px);
 }
-.sum{
-  width: 200px;
+.mapButton{
+  background: rgba(0, 0, 0, 0.68);
+  border: none;
+  cursor: pointer;
+}
+.footer{
+  background-color: #F0EDE6;
+  height: 80px;
+  margin-top: 30px;
 }

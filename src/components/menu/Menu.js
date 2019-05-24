@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Search from '../site/Search';
-import Rater from '../site/Rater'
+import Rater from '../site/Rater';
 import { Row, List, Card, Divider, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 

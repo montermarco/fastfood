@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import menu from '../data/menu.json'
 import Header from './Header';
+import Footer from './Footer';
 import Menu from '../menu/Menu';
 import Item from '../menu/Item';
 
@@ -64,6 +65,7 @@ class Router extends Component {
                         }}/>
 
                     </Switch>
+                    <Footer/>
                 </BrowserRouter>
             
         );
