@@ -9,9 +9,6 @@ const Header = () => {
                     <Link to="/"><img src="/imgs/logoffs.png" alt="logo" className='logo'/></Link>
             </div>
         </div> 
-
-
-
     );
 };
 

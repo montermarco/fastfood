@@ -5,7 +5,6 @@ import Mapa from '../site/Map';
 const Item = (props) => {
 
     const { dish, description, price} = props.items;
-    console.log(props)
     
     const Description = ({ term, children, span = 12 }) => (
         <Col span={span}>

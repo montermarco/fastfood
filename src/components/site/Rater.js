@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rate } from 'antd';
+import { Rate, Row } from 'antd';
 
 const desc = ['terrible', 'malo', 'normal', 'bueno', 'excelente'];
 
@@ -10,17 +10,19 @@ class Rater extends React.Component {
 
   handleChange = value => {
     this.setState({ value });
-    const rated = value;
-    console.log(rated)
+    const rank = value;
+    this.props.ranking(rank)  
   };
 
   render() {
     const { value } = this.state;
     return (
-      <span>
-        <Rate onChange={this.handleChange} value={value} />
-        {value ? <span className="ant-rate-text">{desc[value - 1]}</span> : ''}
-      </span>
+        <Row type="flex" justify="space-around">
+          <span>
+            <Rate onChange={this.handleChange} value={value} />
+            {value ? <span className="ant-rate-text">{desc[value - 1]}</span> : ''}
+          </span>
+        </Row>
     );
   }
 }

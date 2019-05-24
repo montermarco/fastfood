@@ -26,7 +26,8 @@ class Menu extends Component {
                 <Row type="flex" justify="space-around">    
                     <div className="filters">
                         <Search search={this.props.searcher}/>
-                        <Rater />
+                        <Rater ranking={this.props.rankingFilter}/>
+                        <br/>
                     </div>    
                 </Row>
                 

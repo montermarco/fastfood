@@ -10,7 +10,8 @@ class Router extends Component {
 
     state = {
         menuItems: [],
-        searchStr: ''
+        searchStr: '',
+        rated: 0
     }
 
     componentWillMount(){
@@ -31,6 +32,12 @@ class Router extends Component {
         }
     }
 
+    ranking = (rank) => {
+        this.setState({
+            rated:rank
+        })
+    }
+
     render() {
         let items = [...this.state.menuItems];
         let search = this.state.searchStr;
@@ -43,7 +50,7 @@ class Router extends Component {
         } else {
             result = items;
         }
-        
+
         return (   
                 <BrowserRouter>
 
@@ -52,7 +59,8 @@ class Router extends Component {
                     <Switch>
                         <Route exact path="/" render={() => (
                             <Menu menuItems={result}
-                                searcher={this.searcher}/>
+                                searcher={this.searcher}
+                                rankingFilter={this.ranking}/>
                         )}/>
 
 
