@@ -64,7 +64,7 @@ Item => Seleccionar Sucursal => Confirmar orden
 
 ## Deployment 📦
 
-* [Heroku](https://www.heroku.com/) - Deployment fallido por conflicto con version eslint.
+* [Heroku](https://www.heroku.com/) - Deployment con Heroku.
 * [Fastfood.com](https://thefastfood.herokuapp.com/)
 
 ## Construido con 🛠️
