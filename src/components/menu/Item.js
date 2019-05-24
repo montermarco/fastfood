@@ -1,7 +1,6 @@
 import React from 'react';
 import { PageHeader, Statistic, Row, Col, Modal, Button } from 'antd';
 import Location from '../site/Location';
-import { Link } from 'react-router-dom';
 
 const Item = (props) => {
 
