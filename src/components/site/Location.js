@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+
 import suc from '../data/suc.json'
 
 class MapaSuc extends Component {
