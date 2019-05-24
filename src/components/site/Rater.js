@@ -5,21 +5,21 @@ const desc = ['terrible', 'malo', 'normal', 'bueno', 'excelente'];
 
 class Rater extends React.Component {
   state = {
-    value: 3,
+    rank: 3,
   };
 
-  handleChange = value => {
-    this.setState({ value });
-    const rated = value;
+  handleChange = rank => {
+    this.setState({ rank });
+    const rated = rank;
     console.log(rated)
   };
 
   render() {
-    const { value } = this.state;
+    const { rank } = this.state;
     return (
       <span>
-        <Rate tooltips={desc} onChange={this.handleChange} value={value} />
-        {value ? <span className="ant-rate-text">{desc[value - 1]}</span> : ''}
+        <Rate onChange={this.handleChange} rank={rank} />
+        {rank ? <span className="ant-rate-text">{desc[rank - 1]}</span> : ''}
       </span>
     );
   }

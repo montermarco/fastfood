@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader, Statistic, Row, Col, Modal, Button } from 'antd';
-import Location from '../site/Location';
+import Mapa from '../site/Map';
 
 const Item = (props) => {
 
@@ -18,7 +18,8 @@ const Item = (props) => {
       
       const content = (
         <Row>
-          <Description term="Cantidad:"> 1 </Description>          
+          <Description term="Cantidad:"> 1 </Description>   
+          <Description term="Sucursal:">  </Description>          
           <Description term="Descripción:" span={24}>{description}</Description>
         </Row>
       );
@@ -45,7 +46,7 @@ const Item = (props) => {
         <div>
           <h2>Selecciona una sucursal</h2>
            
-          <Location location={props.pickLocation}/>     
+          <Mapa location={props.pickLocation}/>     
         
           <PageHeader
                   onBack={() => window.history.back()}
