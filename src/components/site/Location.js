@@ -28,6 +28,8 @@ class MapaSuc extends Component {
         this.setState({
             selectedSuc: loc
         });
+        const branch = loc.properties.name;
+        return branch;
     }
 
     updateViewport = (viewport) => this.setState({ viewport })
