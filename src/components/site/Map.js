@@ -15,7 +15,6 @@ export default function Mapa(){
     
     const selectSuc = suc =>{        
         console.log(suc)
-        
     }
 
     return (
